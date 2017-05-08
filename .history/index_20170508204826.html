@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Стиль кода</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="styles/screen-16x10.css">
+</head>
+<body class="shower list">
+	<header class="caption">
+		<h1>Стиль кода</h1>
+		<p><a href="https://www.linkedin.com/in/kpukraine" target="_blank">Кирилл Поддубный</a>, it-hive.</p>
+	</header>
+	<section class="slide">
+		<h2>Отступы</h2>
+		<ul>
+			<li>
+				<b>Вертикальный отступ, для лучшей разбивки кода – перевод строки.</b>
+			</li>
+		</ul>
+		<pre>
+			<code>function pow(x, n) {</code>
+			<code>  var result = 1;</code>
+			<code><span class="comment">  //              <--</span></code>
+			<code>  for (var i = 0; i < n; i++) {</code>
+			<code>    result *= x;</code>
+			<code>  }</code>
+			<code><span class="comment">  //              <--</span></code>
+			<code>  return result;</code>
+			<code>}</code>
+		</pre>
+	</section>
+	<script src="shower.min.js"></script>
+	<!-- Copyright © 2017 Kirill Poddubnyi, JustCoded -->
+</body>
+</html>
