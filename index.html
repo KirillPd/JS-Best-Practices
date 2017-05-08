@@ -1,37 +1,216 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<title>JavaScript Best Practices</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="styles/screen-16x10.css">
+	<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+	<style>
+		blockquote {
+			font-size: 38px;
+			color: #b02b2b;
+			font-weight: 600;
+		}
+
+		.slide blockquote::before {
+			font-size: 140px;
+		}
+	</style>
 </head>
+
 <body class="shower list">
 	<header class="caption">
 		<h1>JavaScript Best Practices</h1>
 		<p><a href="https://github.com/KirillPd" target="_blank">Кирилл Поддубный</a></p>
 	</header>
 	<section class="slide">
-		<h2>Отступы</h2>
-		<ul>
-			<li>
-				<b>Вертикальный отступ, для лучшей разбивки кода – перевод строки.</b>
-			</li>
-		</ul>
-		<pre>
-			<code>function pow(x, n) {</code>
-			<code>  var result = 1;</code>
-			<code><span class="comment">  //              <--</span></code>
-			<code>  for (var i = 0; i < n; i++) {</code>
-			<code>    result *= x;</code>
-			<code>  }</code>
-			<code><span class="comment">  //              <--</span></code>
-			<code>  return result;</code>
-			<code>}</code>
-		</pre>
+		<h2>JavaScript не такой как все...</h2>
 	</section>
+	<div class="slide">
+		<h2>Строка равна числу??</h2>
+		<p data-height="265" data-theme-id="light" data-slug-hash="KmZNKX" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="equal" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/KmZNKX/">equal</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<h2>Почему не работает!?</h2>
+		<p data-height="265" data-theme-id="light" data-slug-hash="WjdoQO" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="WjdoQO" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/WjdoQO/">WjdoQO</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<h2>Semicolons ;</h2>
+		<blockquote>Semicolons are optional in JavaScript</blockquote>
+		<p>Lot of people…</p>
+	</div>
+	<div class="slide">
+		<blockquote>Certain ECMAScript statements (…) must be terminated with semicolons.
+		</blockquote>
+		<p>EcmaScript Standards</p>
+	</div>
+	<div class="slide">
+		<blockquote>
+			For convenience, however, such semicolons may be omitted from the source text in certain situations.
+		</blockquote>
+		<p>EcmaScript Standards</p>
+	</div>
+	<div class="slide">
+		<blockquote>
+			These situations are described by saying that semicolons are automatically inserted….
+		</blockquote>
+		<p>EcmaScript Standards</p>
+	</div>
+	<div class="slide">
+		<h1 style="text-align: center; padding-right: 120px">;;Wuuut?!;</h1>
+		<img src="https://media.giphy.com/media/xTiTnDAP0RiCo9k85W/giphy.gif" alt="image description" />
+	</div>
+	<div class="slide">
+		<p data-height="265" data-theme-id="light" data-slug-hash="RVxoxR" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="RVxoxR" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/RVxoxR/">RVxoxR</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<h2 style="text-decoration: line-through">jQuery не нужен</h2>
+		<h2>Semicolons не нужны</h2>
+	</div>
+	<div class="slide">
+		<p data-height="265" data-theme-id="light" data-slug-hash="KmZNee" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="KmZNee" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/KmZNee/">KmZNee</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<p data-height="265" data-theme-id="light" data-slug-hash="Wjdogz" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="Wjdogz" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/Wjdogz/">Wjdogz</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<ul>
+			<li>continue</li>
+			<li>break</li>
+			<li>return</li>
+			<li>throw</li>
+		</ul>
+	</div>
+	<div class="slide">
+		<p data-height="265" data-theme-id="light" data-slug-hash="zwpoXg" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="zwpoXg" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/zwpoXg/">zwpoXg</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<p>Используйте линтеры или хинтеры!</p>
+	</div>
+	<div class="slide">
+		<h2>Кудрявые скобки {}</h2>
+		<p data-height="365" data-theme-id="light" data-slug-hash="jmYVje" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="jmYVje" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/jmYVje/">jmYVje</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<h2>Равенство =</h2>
+		<p data-height="265" data-theme-id="light" data-slug-hash="WjdRNg" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="WjdRNg" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/WjdRNg/">WjdRNg</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<h2>Переменные</h2>
+		<p data-height="265" data-theme-id="light" data-slug-hash="EmoZVj" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="EmoZVj" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/EmoZVj/">EmoZVj</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<p data-height="265" data-theme-id="light" data-slug-hash="aWEpmd" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="aWEpmd" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/aWEpmd/">aWEpmd</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<h2>Функции</h2>
+		<div style="display: flex; justify-content: space-between; height: 300px;">
+			<div style="width: 48%; display: flex; justify-content: center; align-items: center; background: #ccc;">
+				<p>Declarations</p>
+			</div>
+			<div style="width: 48%; display: flex; justify-content: center; align-items: center; background: #ccc;">
+				<p>Expressions</p>
+			</div>
+		</div>
+	</div>
+	<div class="slide">
+		<p data-height="265" data-theme-id="light" data-slug-hash="KmZaWY" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="KmZaWY" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/KmZaWY/">KmZaWY</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<p data-height="265" data-theme-id="light" data-slug-hash="gWogRz" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="gWogRz" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/gWogRz/">gWogRz</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<h2>'use strict';</h2>
+		<blockquote>JavaScript is trying to help… Don’t let it.</blockquote>
+		<p>Jonathan Mills</p>
+	</div>
+	<div class="slide">
+		<p data-height="265" data-theme-id="light" data-slug-hash="eWygjJ" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="eWygjJ" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/eWygjJ/">eWygjJ</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<p data-height="265" data-theme-id="light" data-slug-hash="rmpjqe" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="rmpjqe" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/rmpjqe/">rmpjqe</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<p data-height="265" data-theme-id="light" data-slug-hash="mmpRQj" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="mmpRQj" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/mmpRQj/">mmpRQj</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<p data-height="265" data-theme-id="light" data-slug-hash="oWpBmo" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="oWpBmo" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/oWpBmo/">oWpBmo</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<p data-height="265" data-theme-id="light" data-slug-hash="mmpRoG" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="mmpRoG" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/mmpRoG/">mmpRoG</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<p data-height="265" data-theme-id="light" data-slug-hash="zwpNXN" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="zwpNXN" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/zwpNXN/">zwpNXN</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<p data-height="265" data-theme-id="light" data-slug-hash="xdpgNr" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="xdpgNr" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/xdpgNr/">xdpgNr</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<p data-height="265" data-theme-id="light" data-slug-hash="YVYNov" data-default-tab="result" data-user="KPend" data-embed-version="2"
+		    data-pen-title="YVYNov" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/YVYNov/">YVYNov</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<p data-height="265" data-theme-id="light" data-slug-hash="RVxpwe" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="RVxpwe" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/RVxpwe/">RVxpwe</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<h2>With</h2>
+		<p data-height="325" data-theme-id="light" data-slug-hash="jmYBPP" data-default-tab="js" data-user="KPend" data-embed-version="2"
+		    data-pen-title="jmYBPP" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/jmYBPP/">jmYBPP</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+			on <a href="http://codepen.io">CodePen</a>.</p>
+	</div>
+	<div class="slide">
+		<p>
+			<p data-height="345" data-theme-id="light" data-slug-hash="vmpxNV" data-default-tab="js" data-user="KPend" data-embed-version="2"
+			    data-pen-title="vmpxNV" class="codepen">See the Pen <a href="https://codepen.io/KPend/pen/vmpxNV/">vmpxNV</a> by Kirill (<a href="http://codepen.io/KPend">@KPend</a>)
+				on <a href="http://codepen.io">CodePen</a>.</p>
+		</p>
+	</div>
 	<script src="shower.min.js"></script>
 	<!-- Copyright © 2017 Kirill Poddubnyi, JustCoded -->
 </body>
+
 </html>
